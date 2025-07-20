@@ -1,17 +1,19 @@
+<center>
+    
+    <body bgcolor="black" style="color:rgb(145, 92, 230)">
 <h1>Guess the number</h1>
 <input id="guessnumber">
 <button onclick="check()">check</button>
-<P id="result">you are all wrong/right</P>
+<P id="result">You are all wrong/right</P>
 
 <script>
-    //selecting input box,paragraph
-var guessnumber =doucument.getElementById("guessnumber")
-var result=doucumnt.getElementById("result")
-var randowNumber = Math.floor(math.random()*10)+1
+  var guessNumber = document.getElementById("guessNumber")
+var result=document.getElementById("result")
+var randomNumber = Math.floor(Math.random()*10)+1
 function check()
 {
-    var enterednumber = guessnumber.value
-    if(randomnumber==enterednumber)
+    var enterednumber = Number (guessnumber.value)
+    if(randomNumber==enterednumber)
 {
     console.log("right")
 }
@@ -20,3 +22,5 @@ else{
 }
 }
 </script>
+</center>
+</body>
